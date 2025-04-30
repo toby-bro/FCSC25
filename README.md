@@ -15,6 +15,8 @@ Here are some writeups for the challenges I solved during the FCSC 2025 CTF. The
   - [Le calme avant la tempest](./hardware/Le_calme_avant_la_tempest/)
   - [Mechanical Display](./hardware/Mechanical_Display/)
   - [Signal sur chat](./hardware/Signal_sur_chat/)
+- [sca-faults](./sca-faults/)
+  - [CryptoBro en détresse](./sca-faults/CryptoBro_en_detresse/)
 
 ## Attestation de participation
 
