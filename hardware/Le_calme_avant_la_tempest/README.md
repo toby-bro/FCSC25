@@ -1,5 +1,7 @@
 # Le calme avant la tempest
 
+[Lien vers le challenge](https://hackropole.fr/fr/challenges/hardware/fcsc2025-hardware-le-calme-avant-la-tempest/)
+
 ## Avertissement
 
 Je me doutais que ce challenge pouvait être résolu avec TempestSDR mais je ne trouvais pas ça assez intéressant d'essayer de comprendre le projet et me suis mis en tête de faire cette extraction par moi-même.

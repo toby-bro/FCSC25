@@ -1,5 +1,7 @@
 # Binary lullaby
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/hardware/fcsc2025-hardware-binary-lullaby/)
+
 Wow I was not expecting a Verilog challenge, this language is really fun.
 Anyways, this challenge consists of a Verilog file that does a lot of nonsense no one cares to read except for the line `assign { y[15], y[7] } = { x[15], x[7] };`, and the output of what this complicated circuit gave when it was fed the flag. The challenge is also lacking an implementation of the logic gates it uses but that is not a problem, we can write it.
 

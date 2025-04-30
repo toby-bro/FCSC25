@@ -1,5 +1,7 @@
 # CryptoBro en détresse
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/hardware/fcsc2025-hardware-cryptobro-en-detresse/)
+
 This challenge gives us the power consumption of a "something" that validates PIN codes.
 We will be going towards differential power analysis (DPA) to solve this problem.
 

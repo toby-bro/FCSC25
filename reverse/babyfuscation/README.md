@@ -1,5 +1,7 @@
 # Babyfuscation
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/reverse/fcsc2025-reverse-babyfuscation/)
+
 To solve this challenge we used gdb with the plugin pwndbg and IDA free.
 
 This writeup will explain chronologically what we did

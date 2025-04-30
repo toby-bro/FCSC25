@@ -1,5 +1,7 @@
 # Mechanical Display
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/hardware/fcsc2025-hardware-mechanical-display/)
+
 This challenge provides us with a VCD file which represents the control signal applied to a little servo for a short span of time.
 
 We thus wrote a script that extracts the timestamps of the rising and falling edges, used the provided linear relation between the control signal's pulse width and the angle of the servo and tried to map it to characters. But that was not sufficient as the angles were slightly shifted. So we corrected with the min and max values of the angles as seen on our first implementation and got this beautiful image of the movement of the arm over time.

@@ -1,5 +1,7 @@
 # RSA WTF
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/crypto/fcsc2025-crypto-rsa-wtf/)
+
 ## Analysis
 
 This challenge has the amusing property of providing us with $p, q, dp, dq$ in a RSA-related challenge.

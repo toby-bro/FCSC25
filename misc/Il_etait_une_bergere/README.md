@@ -1,5 +1,7 @@
 # Il était une bergère
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/misc/fcsc2025-misc-il-etait-une-bergere/)
+
 This challenge consists of two parts : understanding what is expected from us, and then finding an algorithm which does it.
 
 The first part is figuring out what instructions we can write and which registers are used for the input and output, and what must the program we are writing do.

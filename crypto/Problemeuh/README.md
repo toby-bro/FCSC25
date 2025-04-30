@@ -1,5 +1,7 @@
 # Problèmeuh
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/crypto/fcsc2025-crypto-problemeuh/)
+
 Ce challenge très intéressant est en gros surtout un problème d'arithmétique des nombres entiers. Ça m'a amusé de pouvoir en refaire. Allons-y pour la résolution.
 
 Les contraintes sont que

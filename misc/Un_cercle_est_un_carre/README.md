@@ -1,5 +1,7 @@
 # Un cercle est un carré
 
+[Lien vers le challenge](https://hackropole.fr/fr/challenges/misc/fcsc2025-misc-un-cercle-est-un-carre/)
+
 Ce problème a été de loin celui qui m'a le plus fait m'arracher des cheveux lors de ce FCSC.
 
 Je passerai les détails mais après avoir passé plus d'une journée à faire des projections de segments sur des plans diagonaux puis sur des arrêtes pour refaire une sorte de projection cubique à la manière d'une projection sphérique du segment $\[P, Q\]$ et avoir vu que c'était pas la solution exacte mais une bonne approximation... J'ai enragé et j'ai cherché sur internet et je suis tombé sur

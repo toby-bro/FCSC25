@@ -1,5 +1,7 @@
 # Signal sur chat
 
+[Link to the challenge](https://hackropole.fr/fr/challenges/hardware/fcsc2025-hardware-signal-sur-chat/)
+
 This challenge was one of the most challenging as my loudspeakers distorted the og cat's sound, the `cat` command was just hanging instead of printing stuff as it used to and I am not fluent in cat.
 
 Nevertheless after calling my own cat and asking him to type what he heard I got the flag F...C...:mouse:...C. The problem is, it was not so sure of how it continued so I had to figure out another method.

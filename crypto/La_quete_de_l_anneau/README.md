@@ -1,5 +1,7 @@
 # La quête de l'anneau
 
+[Lien vers le challenge](https://hackropole.fr/fr/challenges/crypto/fcsc2025-crypto-la-quete-de-l-anneau/)
+
 Ici le mécanisme pour chiffrer le message est une "multiplication modulaire" selon l'équation $c \equiv m \cdot iv \pmod s$ avec $c$ le message chiffré, $m$ le message à chiffrer, $iv$ un nombre aléatoire premier avec $s$ et $s$ le 'module' de chiffrement.
 
 Le déchiffrement s'obtient donc avec l'équation $m \equiv c \cdot iv^{-1} \pmod s$ avec $iv^{-1}$ l'inverse de $iv$ dans l'anneau $\mathbb Z / s\mathbb Z$, en gros $iv^{-1} \cdot iv \equiv 1\pmod s $.
