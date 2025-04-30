@@ -15,3 +15,9 @@ Here are some writeups for the challenges I solved during the FCSC 2025 CTF. The
   - [Le calme avant la tempest](./hardware/Le_calme_avant_la_tempest/)
   - [Mechanical Display](./hardware/Mechanical_Display/)
   - [Signal sur chat](./hardware/Signal_sur_chat/)
+
+## Attestation de participation
+
+This year they gave out a certificate of score I guess I can leave it here
+
+![Certificate](attestation-participation.png)
