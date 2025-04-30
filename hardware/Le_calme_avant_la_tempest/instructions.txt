@@ -1,0 +1,3 @@
+Une attaque TEMPEST consiste à acquérir les signaux parasites compromettants émis par un équipement, et à les remettre en forme afin de reconstruire le signal original.
+
+Une interception d'un signal vidéo émis par un écran a pu être enregistrée et remise en forme par un logiciel de raster. La fréquence d'échantillonnage est de 20 MHz. Les données sont des entiers signés sur 16 bits. Reconstituez le signal vidéo pour voir apparaître le flag.

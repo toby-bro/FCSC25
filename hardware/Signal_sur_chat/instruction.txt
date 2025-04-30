@@ -1,0 +1,43 @@
+                   Signal sur chat
+
+Les techniques d'étalement de spectre à séquence directe (DSSS) sont formidables. Elles permettent à plusieurs systèmes radio de communiquer en même temps sur le même canal (on appelle cela le CDMA : Code Division Multiple Access), et elle peuvent aussi résister à des rapports signal à bruit très défavorables. Pour illustrer cela nous allons mener l'expérience suivante : pourrez-vous retrouver le flag si je transmet ses 22 caractères en même temps et si, pour compliquer les choses, j'ajoute du bruit... de chat.
+
+Dans cette expérience, le rapport signal sur chat de chaque lettre peut atteindre jusqu'à -45dB!
+
+J'ai utilisé des codes de Gold (ou séquences de Gold, d'après un certain Robert Gold). Il sont formés en calculant le XOR de deux séquences de longueur maximale (2^n-1) issue de deux LFSR (Linear Feedback Shift Register) de même longueur (n), dont l'une des séquence est décalée par rapport à l'autre. Les séquences obtenues ainsi ont la propriété d'être très faiblement corrélées entre elles : c'est parfait pour notre expérience !
+
+Les satellites GPS utilisent aussi des codes de Gold pour émettre leurs signaux, mais attention, les miens sont différents : les deux LFSR font une longueur de 15 bits, et ont pour polynômes générateurs :
+
+G1(x) = x^15 + x^7 + 1
+G2(x) = x^15 + x^10 + x^5 + x^4 + 1
+
+Les valeurs d'initialisation des deux registres sont 0x7FFF.
+
+Comme je ne voulais pas que le fichier audio dure trop longtemps, j'ai superposé les 22 caractères ASCII (8 bits) du flag les uns par dessus les autres, chacun avec son propre code de Gold.
+
+Je n'ai pas voulu compliquer les choses : le premier échantillon du son contient le premier bit de la séquence de Gold, et ainsi de suite (un bit de séquence par échantillon sonore).
+
+Ainsi, le signal audio est composé de 262136 échantillons, soit 8 fois 32767 (le nombre de bits d'un caractère fois la longueur d'une de mes séquences de Gold).
+
+Les bits de l'octet sont transmis du poids le plus fort au poids le plus faible.
+
+Pour trouver chaque caractère du flag, il faut utiliser la phase caractéristique du code de Gold qui lui a été attribué.
+
+Les 22 phases (qui correspondent au nombre de bits d'avance du registre G2 sur le registre G1) sont les suivantes :
+
+4, 7, 8, 24, 27, 31, 39, 42, 43, 49, 53, 54, 59, 62, 65, 73, 93, 99, 118, 119, 120, 128
+
+Par exemple, les premiers bits de la 22ème séquence (phase=128) sont :
+
+1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, ...
+
+Cette séquence est transformée de la manière suivante pour être corrélée au signal :
+
++0.5, +0.5, -0.5, -0.5, +0.5, +0.5, -0.5, +0.5, -0.5, -0.5, +0.5, +0.5, -0.5, +0.5, +0.5, -0.5, ...
+
+Si la séquence est corrélée, le bit décodé vaut 0, si elle est anti-corrélée, le bit décodé vaut 1.
+
+En théorie, la corrélation d'une séquence de longueur 32767 va apporter un gain de traitement de 10*log10(32767) = 45,2 dB. Est-ce que cela sera suffisant ? Espérons que les chats n'ont pas fait trop de bruit !
+
+
+Le fichier s'appelle signal-sur-chat.wav

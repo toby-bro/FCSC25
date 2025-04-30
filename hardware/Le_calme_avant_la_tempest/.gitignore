@@ -1,0 +1,13 @@
+auto_detection/
+offset_tests/
+line_length_*.png
+video_frames
+best_height*.png
+analysis_image.png
+corner_entropy_offset_*.png
+final_optimal_offset.png
+frame_diff_height_*.png
+offset_test*.png
+vertical_offset_*.png
+horizontal_offset_*.png
+*.bin
