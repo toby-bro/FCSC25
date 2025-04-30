@@ -4,7 +4,7 @@ Here are some writeups for the challenges I solved during the FCSC 2025 CTF. The
 
 Some writeups are in french, when the problem was too mathematized and I new my english would hinder me.
 
-My two most interesting writeups this year are :
+My two most interesting writeups this year are (both are in french btw):
 
 - [Le calme avant la tempest](./hardware/Le_calme_avant_la_tempest/)
 - [Un cercle est un carré](./misc/Un_cercle_est_un_carre/)
